@@ -1,0 +1,7 @@
+1.partition key支持IN 与EQ，支持Token(),但是依据设置的Partitioner。
+2.Cluster column数据存储是按照其排序，依据最后一个column 范围选择
+3.IN只能在最后一个partition key 或者整个primary key
+4.Allow Filtering强制所有列可查询
+5.为列创建secondary index，供查询
+6.insert 或者更新时，如果记录存在就更新，不存在则新增
+7.查询条件中没有or，连表查询如何做？
